@@ -1,7 +1,7 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$checkbox-prefix-cls: $prefix + -checkbox;
-$checkbox-group-prefix-cls: $prefix + -checkbox-group;
+$checkbox-prefix-cls: variables.$prefix + -checkbox;
+$checkbox-group-prefix-cls: variables.$prefix + -checkbox-group;
 
 
 .#{$checkbox-prefix-cls} {
@@ -52,9 +52,9 @@ $checkbox-group-prefix-cls: $prefix + -checkbox-group;
     align-items: center;
     justify-content: center;
     position: absolute;
-    transition: fill $transition-duration, transform $transition-duration, opacity $transition-duration, border-color $transition-duration;
+    transition: fill variables.$transition-duration, transform variables.$transition-duration, opacity variables.$transition-duration, border-color variables.$transition-duration;
     transform: scale(0.5);
-    fill: $white;
+    fill: variables.$white;
     background-color: var(--eu-color-primary);
   }
   &-checked &-inner{
@@ -66,14 +66,14 @@ $checkbox-group-prefix-cls: $prefix + -checkbox-group;
   }
   &-disabled  &-inner{
     cursor: not-allowed;
-    background-color: $disabled-bg-color;
-    border: 1px solid $disabled-border-color;
+    background-color: variables.$disabled-bg-color;
+    border: 1px solid variables.$disabled-border-color;
   }
   &-disabled:hover &-inner{
-    border: 1px solid $disabled-border-color;
+    border: 1px solid variables.$disabled-border-color;
   }
   &-disabled  &-icon {
-    background-color: $disabled-border-color;
+    background-color: variables.$disabled-border-color;
   }
 }
 

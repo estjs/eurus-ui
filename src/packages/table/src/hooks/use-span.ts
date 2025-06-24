@@ -18,7 +18,7 @@ export const useSpan = ({
 				column: TableColumnData | TableOperationColumn;
 				rowIndex: number;
 				columnIndex: number;
-		  }) => { rowspan?: number; colspan?: number } | void)
+		  }) => { rowspan?: number; colspan?: number })
 		| undefined
 	>;
 	data: Ref<TableDataWithRaw[]>;
@@ -29,13 +29,15 @@ export const useSpan = ({
 		if (spanMethod.value) {
 			data.value.forEach((record, rowIndex) => {
 				columns.value.forEach((column, columnIndex) => {
-					const { rowspan = 1, colspan = 1 } =
-						spanMethod.value?.({
-							record: record.raw,
-							column,
-							rowIndex,
-							columnIndex,
-						}) ?? {};
+					const { rowspan = 1, colspan = 1 } = (spanMethod.value?.({
+						record: record.raw,
+						column,
+						rowIndex,
+						columnIndex,
+					}) ?? {}) as {
+						rowspan?: number;
+						colspan?: number;
+					};
 					if (rowspan > 1 || colspan > 1) {
 						span[`${rowIndex}-${columnIndex}`] = [rowspan, colspan];
 					}

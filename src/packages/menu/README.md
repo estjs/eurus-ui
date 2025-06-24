@@ -8,7 +8,7 @@ class: 'menu-doc'
 ```javascript
 import { EMenu } from 'eurus-ui';
 
-Vue.createApp().use(EMenu.name, EMenu)
+Vue.createApp().use(EMenu.name!, EMenu)
 ```
 ::::card  menu 类型
 

@@ -2,7 +2,7 @@ import EBreadcrumb from './src';
 import type { App } from 'vue';
 
 EBreadcrumb.install = (app: App) => {
-	app.component(EBreadcrumb.name, EBreadcrumb);
+	app.component(EBreadcrumb.name!, EBreadcrumb);
 };
 
 export { EBreadcrumb };

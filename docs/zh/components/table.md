@@ -8,7 +8,7 @@ class: 'table-doc'
 ```javascript
 import { ETable } from 'eurus-ui';
 
-Vue.createApp().use(ETable.name, ETable)
+Vue.createApp().use(ETable.name!, ETable)
 ```
 ::::card  table 类型
 

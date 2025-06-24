@@ -1,15 +1,15 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-@import '../style/dateWeekBar.scss';
-@import '../style/dateHeader.scss';
-@import '../style/dateDayList';
-@import "../style/dateFooter.scss";
+@use '../style/dateWeekBar.scss';
+@use '../style/dateHeader.scss';
+@use '../style/dateDayList';
+@use "../style/dateFooter.scss";
 
-@import '../style/dateMonth.scss';
-@import '../style/dateRange.scss';
+@use '../style/dateMonth.scss';
+@use '../style/dateRange.scss';
 
-$date-picker-prefix-cls: $prefix + -date-picker;
-$date-picker-panel-prefix-cls: $prefix + -date-picker-panel;
+$date-picker-prefix-cls: variables.$prefix + -date-picker;
+$date-picker-panel-prefix-cls: variables.$prefix + -date-picker-panel;
 
 .#{$date-picker-prefix-cls} {
   position: relative;

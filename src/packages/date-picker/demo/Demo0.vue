@@ -1,8 +1,12 @@
 <template>
-	<EDatePicker v-model="val" @change="handleChange" />
+	<EDatePicker v-model="val" @change="handleChange"
+/>
 
-	<EDatePicker v-model="val" type="month" @change="handleChange" />
-	<EDatePicker type="range" @change="handleChange" />
+	<EDatePicker v-model="val" type="month"
+@change="handleChange"
+/>
+	<EDatePicker type="range" @change="handleChange"
+/>
 </template>
 
 <script setup lang="ts">

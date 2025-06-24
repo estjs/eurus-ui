@@ -1,7 +1,7 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
 
-$message-prefix-cls: $prefix + '-message' !default;
+$message-prefix-cls: variables.$prefix + '-message' !default;
 $message-list-prefix-cls: $message-prefix-cls + '-list' !default;
 
 .#{$message-list-prefix-cls} {

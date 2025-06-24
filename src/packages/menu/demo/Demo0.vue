@@ -1,9 +1,12 @@
 <template>
 	<div>
-		<e-button @click="setCollapsed">change collapsed</e-button>
-		<e-menu :items="items" mode="vertical" />
+		<e-button @click="setCollapsed"> change collapsed </e-button>
+		<e-menu :items="items" mode="vertical"
+/>
 		<p>dark主题</p>
-		<e-menu :items="items" mode="vertical" :collapsed="collapsed" theme="dark" />
+		<e-menu :items="items" mode="vertical"
+:collapsed="collapsed" theme="dark"
+/>
 	</div>
 </template>
 

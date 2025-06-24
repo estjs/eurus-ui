@@ -1,6 +1,6 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$divider-prefix-cls: $prefix + -divider;
+$divider-prefix-cls: variables.$prefix + -divider;
 
 .#{$divider-prefix-cls} {
   position: relative;
@@ -20,7 +20,7 @@ $divider-prefix-cls: $prefix + -divider;
     min-width: 1px;
     max-width: 1px;
     bottom: 1px;
-    border-left: 1px solid $border-color-base;
+    border-left: 1px solid variables.$border-color-base;
   }
 
   + &-horizontal {
@@ -30,7 +30,7 @@ $divider-prefix-cls: $prefix + -divider;
     margin: 0 8px;
     vertical-align: middle;
     width: 1px;
-    border-bottom: 1px solid $border-color-base;
+    border-bottom: 1px solid variables.$border-color-base;
 
     + .#{$divider-prefix-cls}-text {
       margin: 20px 0;

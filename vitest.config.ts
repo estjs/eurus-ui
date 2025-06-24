@@ -16,7 +16,7 @@ export default defineConfig({
 	plugins: [Vue(), Jsx()],
 	test: {
 		include: ['**/__tests__/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-		transformMode: {
+		testTransformMode: {
 			web: [/\.[jt]sx$/],
 		},
 		coverage: {

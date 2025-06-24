@@ -14,7 +14,7 @@
 					? {
 							paddingTop: `${frontPadding}px`,
 							paddingBottom: `${behindPadding}px`,
-					  }
+						}
 					: {}
 			"
 		>
@@ -27,7 +27,7 @@
 						? {
 								paddingTop: `${frontPadding}px`,
 								paddingBottom: `${behindPadding}px`,
-						  }
+							}
 						: {}
 				"
 			>
@@ -37,7 +37,9 @@
 					:has-item-size="hasItemSize"
 					:set-item-size="setItemSize"
 				>
-					<slot name="item" :item="item" :index="start + index" />
+					<slot name="item" :item="item"
+:index="start + index"
+/>
 				</VirtualListItem>
 			</Component>
 		</Component>

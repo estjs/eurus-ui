@@ -8,7 +8,7 @@ class: 'dialog-doc'
 ```javascript
 import { EDialog } from 'eurus-ui';
 
-Vue.createApp().use(EDialog.name, EDialog)
+Vue.createApp().use(EDialog.name!, EDialog)
 ```
 ::::card  dialog 类型
 

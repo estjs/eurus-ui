@@ -1,7 +1,7 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$button-group-prefix-cls: $prefix + -button-group;
-$button-prefix-cls: $prefix + -button;
+$button-group-prefix-cls: variables.$prefix + -button-group;
+$button-prefix-cls: variables.$prefix + -button;
 
 .#{$button-group-prefix-cls} {
   flex-wrap: nowrap;

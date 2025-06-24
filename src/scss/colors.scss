@@ -1,14 +1,16 @@
+@use "variables";
+
 :root {
-  --eu-color-primary: #{$primary};
-  --eu-color-secondary: #{$secondary};
-  --eu-color-purple: #{$purple};
-  --eu-color-positive: #{$positive};
-  --eu-color-danger: #{$danger};
-  --eu-color-info: #{$info};
-  --eu-color-warning: #{$warning};
-  --eu-color-dark: #{$dark};
-  --eu-color-grey:#{$grey};
-  --eu-color-black: #{$black};
+  --eu-color-primary: #{variables.$primary};
+  --eu-color-secondary: #{variables.$secondary};
+  --eu-color-purple: #{variables.$purple};
+  --eu-color-positive: #{variables.$positive};
+  --eu-color-danger: #{variables.$danger};
+  --eu-color-info: #{variables.$info};
+  --eu-color-warning: #{variables.$warning};
+  --eu-color-dark: #{variables.$dark};
+  --eu-color-grey:#{variables.$grey};
+  --eu-color-black: #{variables.$black};
 }
 
 .text-dark {
@@ -100,17 +102,17 @@
 }
 
 .text-separator {
-  color: $separator-color;
+  color: variables.$separator-color;
 }
 
 .bg-separator {
-  background: $separator-color;
+  background: variables.$separator-color;
 }
 
 .text-dark-separator {
-  color: $separator-dark-color;
+  color: variables.$separator-dark-color;
 }
 
 .bg-dark-separator {
-  background: $separator-dark-color;
+  background: variables.$separator-dark-color;
 }

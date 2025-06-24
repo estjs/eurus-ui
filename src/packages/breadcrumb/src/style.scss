@@ -1,7 +1,7 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
 
-$breadcrumb-prefix-cls: $prefix + -breadcrumb;
+$breadcrumb-prefix-cls: variables.$prefix + -breadcrumb;
 
 
 .#{$breadcrumb-prefix-cls} {

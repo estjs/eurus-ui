@@ -8,7 +8,7 @@ class: 'spin-doc'
 ```javascript
 import { ESpin } from 'eurus-ui';
 
-Vue.createApp().use(ESpin.name, ESpin)
+Vue.createApp().use(ESpin.name!, ESpin)
 ```
 ::::card  spin 类型
 

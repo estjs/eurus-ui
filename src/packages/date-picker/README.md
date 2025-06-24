@@ -8,7 +8,7 @@ class: 'EDatePicker-doc'
 ```javascript
 import { EDatePicker } from 'eurus-ui';
 
-Vue.createApp().use(EDatePicker.name, EDatePicker)
+Vue.createApp().use(EDatePicker.name!, EDatePicker)
 ```
 <!--
 ::::card  EDatePicker 类型

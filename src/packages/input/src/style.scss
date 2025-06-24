@@ -1,7 +1,7 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$input-prefix-cls: $prefix + -input;
-$input-wrapper-prefix-cls: $prefix + -input-wrapper;
+$input-prefix-cls: variables.$prefix + -input;
+$input-wrapper-prefix-cls: variables.$prefix + -input-wrapper;
 
 .#{$input-wrapper-prefix-cls} {
   display: flex;

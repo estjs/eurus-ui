@@ -8,7 +8,7 @@ class: 'button-doc'
 ```javascript
 import { EButton } from 'eurus-ui';
 
-Vue.createApp().use(EButton.name, EButton)
+Vue.createApp().use(EButton.name!, EButton)
 ```
 
 :::buttonloading

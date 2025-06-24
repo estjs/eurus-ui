@@ -8,7 +8,7 @@ class: 'empty-doc'
 ```javascript
 import { EEmpty } from 'eurus-ui';
 
-Vue.createApp().use(EEmpty.name, EEmpty)
+Vue.createApp().use(EEmpty.name!, EEmpty)
 ```
 ::::card  empty 类型
 

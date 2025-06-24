@@ -8,7 +8,7 @@ class: 'ECheckbox-doc'
 ```javascript
 import { ECheckbox } from 'eurus-ui';
 
-Vue.createApp().use(ECheckbox.name, ECheckbox)
+Vue.createApp().use(ECheckbox.name!, ECheckbox)
 ```
 <!--
 ::::card button 类型

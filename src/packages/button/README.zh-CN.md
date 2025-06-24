@@ -9,7 +9,7 @@ sidebarDepth: 2
 ```javascript
 import { Button } from 'eurus-ui'
 
-Vue.createApp().use(Button.name, Button)
+Vue.createApp().use(Button.name!, Button)
 ```
 
 ::::card button 类型

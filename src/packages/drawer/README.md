@@ -8,7 +8,7 @@ class: 'EDrawer-doc'
 ```javascript
 import { EDrawer } from 'eurus-ui';
 
-Vue.createApp().use(EDrawer.name, EDrawer)
+Vue.createApp().use(EDrawer.name!, EDrawer)
 ```
 <!--
 ::::card  EDrawer 类型

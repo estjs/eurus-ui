@@ -1,12 +1,11 @@
 import useEventListener from '@/packages/_hooks/useEventListener';
-import type { SpyInstance } from 'vitest';
 
 describe('eventListener', () => {
 	const options = { capture: true };
 	let stop: () => void;
 	let target: HTMLDivElement;
-	let removeSpy: SpyInstance;
-	let addSpy: SpyInstance;
+	let removeSpy: any;
+	let addSpy: any;
 	beforeEach(() => {
 		target = document.createElement('div');
 		removeSpy = vitest.spyOn(target, 'removeEventListener');

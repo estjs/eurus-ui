@@ -8,7 +8,7 @@ class: 'message-doc'
 ```javascript
 import { EMessage } from 'eurus-ui';
 
-Vue.createApp().use(EMessage.name, EMessage)
+Vue.createApp().use(EMessage.name!, EMessage)
 ```
 ::::card  message 类型
 

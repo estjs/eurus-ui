@@ -1,40 +1,57 @@
 <template>
-	<EForm ref="formRef" :model="form" :rules="rules" disabled inline>
-		<EFormItem label="姓名" prop="name">
+	<EForm ref="formRef" :model="form"
+:rules="rules" disabled inline
+>
+		<EFormItem label="姓名" prop="name"
+>
 			<EInput v-model="form.name" />
 		</EFormItem>
-		<EFormItem label="年龄" prop="age">
+		<EFormItem label="年龄" prop="age"
+>
 			<EInputNumber v-model="form.age" />
 		</EFormItem>
-		<EFormItem label="性别" prop="sex">
+		<EFormItem label="性别" prop="sex"
+>
 			<ESelect v-model="form.sex">
-				<EOption value="1" label="基础用法1">男</EOption>
-				<EOption value="2" label="基础用法2">女</EOption>
-				<EOption value="3" label="基础用法3">未知</EOption>
-				<EOption value="4" label="基础用法4">双性人</EOption>
+				<EOption value="1" label="基础用法1"> 男 </EOption>
+				<EOption value="2" label="基础用法2"> 女 </EOption>
+				<EOption value="3" label="基础用法3"> 未知 </EOption>
+				<EOption value="4" label="基础用法4"> 双性人 </EOption>
 			</ESelect>
 		</EFormItem>
 
-		<EFormItem label="位置" prop="city">
+		<EFormItem label="位置" prop="city"
+>
 			<ERadioGroup v-model="form.city">
-				<ERadio label="国内" value="1" />
-				<ERadio label="国外" value="3" />
-				<ERadio label="火星" value="2" disabled />
+				<ERadio label="国内" value="1"
+/>
+				<ERadio label="国外" value="3"
+/>
+				<ERadio label="火星" value="2"
+disabled
+/>
 			</ERadioGroup>
 		</EFormItem>
-		<EFormItem label="时间" prop="date">
+		<EFormItem label="时间" prop="date"
+>
 			<EDatePicker v-model="form.date" />
 		</EFormItem>
 
-		<EFormItem label="天气" prop="weather">
-			<ESwitch v-model="form.weather" checked-label="好" unchecked-label="不好" />
+		<EFormItem label="天气" prop="weather"
+>
+			<ESwitch v-model="form.weather" checked-label="好"
+unchecked-label="不好"
+/>
 		</EFormItem>
-		<EFormItem label="详细地址" prop="address">
-			<ETextarea v-model="form.address" placeholder="text" visible-word-limit :maxlength="20" />
+		<EFormItem label="详细地址" prop="address"
+>
+			<ETextarea v-model="form.address" placeholder="text"
+visible-word-limit :maxlength="20"
+/>
 		</EFormItem>
 		<EFormItem>
-			<EButton type="primary" @click="submit">提交</EButton>
-			<EButton type="primary" @click="reset">重置</EButton>
+			<EButton type="primary" @click="submit"> 提交 </EButton>
+			<EButton type="primary" @click="reset"> 重置 </EButton>
 		</EFormItem>
 	</EForm>
 </template>

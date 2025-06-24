@@ -8,7 +8,7 @@ class: 'tool-tip-doc'
 ```javascript
 import { ETooltip } from 'eurus-ui';
 
-Vue.createApp().use(ETooltip.name, ETooltip)
+Vue.createApp().use(ETooltip.name!, ETooltip)
 ```
 ::::card  tool-tip 类型
 

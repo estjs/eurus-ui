@@ -8,7 +8,7 @@ class: 'EBackTop-doc'
 ```javascript
 import { EBackTop } from 'eurus-ui';
 
-Vue.createApp().use(EBackTop.name, EBackTop)
+Vue.createApp().use(EBackTop.name!, EBackTop)
 ```
 <!--
 ::::card button 类型

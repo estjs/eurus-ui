@@ -1,7 +1,7 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$radio-prefix-cls: $prefix + -radio;
-$radio-group-prefix-cls: $prefix + -radio-group;
+$radio-prefix-cls: variables.$prefix + -radio;
+$radio-group-prefix-cls: variables.$prefix + -radio-group;
 .#{$radio-prefix-cls} {
   display: inline-flex;
   align-items: center;
@@ -49,7 +49,7 @@ $radio-group-prefix-cls: $prefix + -radio-group;
       border-radius: 50%;
       background-color: var(--eu-color-primary);
       transform: translate(-50%, -50%) scale(0);
-      transition: transform $transition-duration;
+      transition: transform variables.$transition-duration;
     }
   }
 
@@ -57,7 +57,7 @@ $radio-group-prefix-cls: $prefix + -radio-group;
     margin: 0 8px 0 8px;
     display: inline-block;
     line-height: unset;
-    color: $black
+    color: variables.$black
   }
 
   &-checked &-inner {
@@ -69,18 +69,18 @@ $radio-group-prefix-cls: $prefix + -radio-group;
 
   &-disabled &-inner {
     cursor: not-allowed;
-    background-color: $disabled-bg-color;
-    border: 1px solid $disabled-border-color;
+    background-color: variables.$disabled-bg-color;
+    border: 1px solid variables.$disabled-border-color;
 
     &:before {
-      background-color: $disabled-border-color;
+      background-color: variables.$disabled-border-color;
     }
   }
   &-disabled:hover &-inner{
-    border: 1px solid $disabled-border-color;
+    border: 1px solid variables.$disabled-border-color;
   }
   &-disabled &__label {
-    color: $disabled-text-color;
+    color: variables.$disabled-text-color;
   }
 
 }

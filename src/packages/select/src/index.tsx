@@ -134,7 +134,7 @@ export default defineComponent({
 										onClick={selectItem}
 									/>
 								);
-						  })
+							})
 						: slots.default && slots.default()}
 
 					{/* TODO: need empty style  */}

@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import { resolve } from 'node:path';
-import sass from 'sass';
+import * as sass from 'sass';
 import type { Plugin, ResolvedConfig } from 'vite';
 
 const dirname = resolve();

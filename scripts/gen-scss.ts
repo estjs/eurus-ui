@@ -1,11 +1,11 @@
 import fs from 'node:fs';
 import * as path from 'node:path';
-import sass from 'sass';
+import * as sass from 'sass';
 
 const OUT_PATH = 'dist/css';
 const INPUT_PATH = 'src/scss';
 const SCSS_OUT_PATH = 'dist/scss';
-const DIST_STYLE_PATH = 'dist/style.css';
+const DIST_STYLE_PATH = 'dist/eurus-ui.css';
 export const compileToCSS = function (nodeEnv: string) {
 	if (!fs.existsSync(SCSS_OUT_PATH)) {
 		fs.mkdirSync(SCSS_OUT_PATH, { recursive: true });

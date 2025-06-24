@@ -40,7 +40,7 @@ export default defineComponent({
 			IconElement = h(allIcon[toPascalCase(iconName) as allIconKeyType]);
 			// support iconfont
 		} else if (!slots.default && props.name) {
-			IconElement = h('i', { class: props.name, style: mergeStyles.value });
+			IconElement = h('i', { class: props.name!, style: mergeStyles.value });
 		}
 		if (!IconElement && !slots.default) {
 			warnOnce('icon', `not found ${props.name} , please check you enter`);

@@ -1,7 +1,7 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
 
-$space-prefix-cls: $prefix + -space;
+$space-prefix-cls: variables.$prefix + -space;
 
 .#{$space-prefix-cls} {
   display: inline-flex;

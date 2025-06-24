@@ -2,7 +2,7 @@ import ESelectDown from './src';
 import type { App } from 'vue';
 
 ESelectDown.install = (app: App) => {
-	app.component(ESelectDown.name, ESelectDown);
+	app.component(ESelectDown.name!, ESelectDown);
 };
 
 export { ESelectDown };

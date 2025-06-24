@@ -1,56 +1,56 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$avatar-prefix-cls: $prefix + -avatar;
+$avatar-prefix-cls: variables.$prefix + -avatar;
 .#{$avatar-prefix-cls} {
-  width: $avatar-size-md;
-  height: $avatar-size-md;
+  width: variables.$avatar-size-md;
+  height: variables.$avatar-size-md;
   border-radius: 50%;
   position: relative;
   background-color: #d6d6d6;
   box-shadow: 1px 3px 12px -4px rgb(0 0 0 / 40%);
-  font-size: $avatar-size-md;
+  font-size: variables.$avatar-size-md;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
 
   &.xs {
-    width: $avatar-size-xs;
-    height: $avatar-size-xs;
-    font-size: $avatar-size-xs;
+    width: variables.$avatar-size-xs;
+    height: variables.$avatar-size-xs;
+    font-size: variables.$avatar-size-xs;
 
     img {
-      border-radius: $avatar-size-xs;
+      border-radius: variables.$avatar-size-xs;
     }
   }
 
   &.sm {
-    width: $avatar-size-sm;
-    height: $avatar-size-sm;
-    font-size: $avatar-size-sm;
+    width: variables.$avatar-size-sm;
+    height: variables.$avatar-size-sm;
+    font-size: variables.$avatar-size-sm;
 
     img {
-      border-radius: $avatar-size-sm;
+      border-radius: variables.$avatar-size-sm;
     }
   }
 
   &.lg {
-    width: $avatar-size-lg;
-    height: $avatar-size-lg;
-    font-size: $avatar-size-lg;
+    width: variables.$avatar-size-lg;
+    height: variables.$avatar-size-lg;
+    font-size: variables.$avatar-size-lg;
 
     img {
-      border-radius: $avatar-size-lg;
+      border-radius: variables.$avatar-size-lg;
     }
   }
 
   &.xl {
-    width: $avatar-size-xl;
-    height: $avatar-size-xl;
-    font-size: $avatar-size-xl;
+    width: variables.$avatar-size-xl;
+    height: variables.$avatar-size-xl;
+    font-size: variables.$avatar-size-xl;
 
     img {
-      border-radius: $avatar-size-xl;
+      border-radius: variables.$avatar-size-xl;
     }
   }
 
@@ -59,7 +59,7 @@ $avatar-prefix-cls: $prefix + -avatar;
   img {
     width: 100%;
     height: 100%;
-    border-radius: $avatar-size-md;
+    border-radius: variables.$avatar-size-md;
     object-fit: cover;
   }
 
@@ -116,7 +116,7 @@ $avatar-prefix-cls: $prefix + -avatar;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $positive;
+    background-color: variables.$positive;
     position: absolute;
     right: -2px;
     bottom: -4px;
@@ -131,7 +131,7 @@ $avatar-prefix-cls: $prefix + -avatar;
       height: 110%;
       border-radius: 50%;
       position: absolute;
-      border: 2px solid $positive;
+      border: 2px solid variables.$positive;
     }
   }
 

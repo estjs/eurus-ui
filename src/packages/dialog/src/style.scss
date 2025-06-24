@@ -1,6 +1,6 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$dialog-prefix-cls: $prefix + -dialog;
+$dialog-prefix-cls: variables.$prefix + -dialog;
 $dialog-mask-prefix-cls: $dialog-prefix-cls + '-mask';
 $dialog-container-prefix-cls: $dialog-prefix-cls + '-container';
 $dialog-wrapper-prefix-cls: $dialog-prefix-cls + '-wrapper';

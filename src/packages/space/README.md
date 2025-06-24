@@ -8,7 +8,7 @@ class: 'space-doc'
 ```javascript
 import { ESpace } from 'eurus-ui';
 
-Vue.createApp().use(ESpace.name, ESpace)
+Vue.createApp().use(ESpace.name!, ESpace)
 ```
 ::::card  space 类型
 

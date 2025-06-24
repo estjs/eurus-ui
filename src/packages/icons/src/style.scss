@@ -1,6 +1,6 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$icon-prefix-cls: $prefix + -icon;
+$icon-prefix-cls: variables.$prefix + -icon;
 
 .#{$icon-prefix-cls} {
   display: inline-flex;

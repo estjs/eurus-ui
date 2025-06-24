@@ -1,8 +1,8 @@
-@import '../../../scss/variables.scss';
+@use '../../../scss/variables.scss';
 
-$date-picker-dayList-prefix-cls: $prefix + -date-picker-day-list;
+$date-picker-dayList-prefix-cls: variables.$prefix + -date-picker-day-list;
 
-$date-picker-body-prefix-cls: $prefix + -date-picker-body;
+$date-picker-body-prefix-cls: variables.$prefix + -date-picker-body;
 
 .#{$date-picker-body-prefix-cls} {
 
@@ -42,7 +42,7 @@ $date-picker-body-prefix-cls: $prefix + -date-picker-body;
   .day-item.active {
     .item-value {
       color: #ffffff;
-      background-color: $bg-color-primary;
+      background-color: variables.$bg-color-primary;
       transition: background-color 0.1s cubic-bezier(0, 0, 1, 1);
     }
   }
@@ -60,7 +60,7 @@ $date-picker-body-prefix-cls: $prefix + -date-picker-body;
       width: 5px;
       height: 5px;
       border-radius: 50%;
-      background-color: $bg-color-primary;
+      background-color: variables.$bg-color-primary;
       position: absolute;
       bottom: 0;
       left: 50%;

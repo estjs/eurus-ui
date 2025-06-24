@@ -8,7 +8,7 @@ class: '<%= name %>-doc'
 ```javascript
 import { <%= prefixName %> } from 'eurus-ui';
 
-Vue.createApp().use(<%= prefixName %>.name, <%= prefixName %>)
+Vue.createApp().use(<%= prefixName %>.name!, <%= prefixName %>)
 ```
 ::::card  <%= name %> 类型
 

@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/order
 import type { PropType } from 'vue';
 import { computed, defineComponent, ref, watch } from 'vue';
 import './style.scss';

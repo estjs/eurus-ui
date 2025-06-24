@@ -8,7 +8,7 @@ class: 'notify-doc'
 ```javascript
 import { ENotify } from 'eurus-ui';
 
-Vue.createApp().use(ENotify.name, ENotify)
+Vue.createApp().use(ENotify.name!, ENotify)
 ```
 ::::card  notify 类型
 

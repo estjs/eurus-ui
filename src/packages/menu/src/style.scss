@@ -1,8 +1,8 @@
-@import '../../../scss/variables';
-$tooltip-prefix-cls: $prefix+ '-tooltip' !default;
+@use '../../../scss/variables';
+$tooltip-prefix-cls: variables.$prefix+ '-tooltip' !default;
 $tooltip-wrapper-prefix-cls: $tooltip-prefix-cls + '-wrapper' !default;
 
-$menu-prefix-cls: $prefix + '-menu' !default;
+$menu-prefix-cls: variables.$prefix + '-menu' !default;
 
 .#{ $menu-prefix-cls } {
 	.icon-arrow {

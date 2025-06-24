@@ -4,6 +4,7 @@
 		"target": "ES6",
 		"rootDir": "../src",
 		"module": "CommonJS",
+		"types": [],
 		"outDir": "../dist/lib"
 	},
 	"rootDir": "./src",

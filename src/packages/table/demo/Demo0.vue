@@ -1,16 +1,17 @@
 <template>
-	<ETable :columns="columns" :data="data">
-		<template #create_time="{ record }">
-			<div>
-				{{ record.create_time }}
-			</div>
-		</template>
-		<template #option>
-			<div>
-				<e-button>编辑</e-button>
-			</div>
-		</template>
-	</ETable>
+  <ETable :columns="columns"
+:data="data">
+    <template #create_time="{ record }">
+      <div>
+        {{ record.create_time }}
+      </div>
+    </template>
+    <template #option>
+      <div>
+        <e-button>编辑</e-button>
+      </div>
+    </template>
+  </ETable>
 </template>
 
 <script lang="ts" setup>

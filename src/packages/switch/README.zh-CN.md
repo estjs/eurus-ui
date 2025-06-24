@@ -8,7 +8,7 @@ class: 'ESwitch-doc'
 ```javascript
 import { ESwitch } from 'eurus-ui';
 
-Vue.createApp().use(ESwitch.name, ESwitch)
+Vue.createApp().use(ESwitch.name!, ESwitch)
 ```
 ::::card switch 基本用法
 

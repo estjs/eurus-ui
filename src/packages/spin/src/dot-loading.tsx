@@ -19,7 +19,7 @@ export default defineComponent({
 					? {
 							width: `${props.size}px`,
 							height: `${props.size}px`,
-					  }
+						}
 					: {};
 
 			return (

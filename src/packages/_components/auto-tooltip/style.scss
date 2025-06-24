@@ -1,6 +1,6 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$auto-tooltip-prefix-cls: $prefix + -auto-tooltip;
+$auto-tooltip-prefix-cls: variables.$prefix + -auto-tooltip;
 
 .#{auto-tooltip-prefix-cls} {
   display: block;

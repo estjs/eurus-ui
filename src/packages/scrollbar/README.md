@@ -8,7 +8,7 @@ class: 'scrollbar-doc'
 ```javascript
 import { EScrollbar } from 'eurus-ui';
 
-Vue.createApp().use(EScrollbar.name, EScrollbar)
+Vue.createApp().use(EScrollbar.name!, EScrollbar)
 ```
 ::::card  scrollbar 类型
 

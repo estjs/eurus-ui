@@ -1,6 +1,6 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$empty-prefix-cls: #{$prefix}-empty;
+$empty-prefix-cls: #{variables.$prefix}-empty;
 
 .#{$empty-prefix-cls} {
 	box-sizing: border-box;

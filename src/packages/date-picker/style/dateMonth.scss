@@ -1,6 +1,6 @@
-@import '../../../scss/variables.scss';
+@use '../../../scss/variables.scss';
 
-$date-picker-calendar-prefix-cls: $prefix + -date-picker-calendar;
+$date-picker-calendar-prefix-cls: variables.$prefix + -date-picker-calendar;
 
 .#{ $date-picker-calendar-prefix-cls } {
 
@@ -26,7 +26,7 @@ $date-picker-calendar-prefix-cls: $prefix + -date-picker-calendar;
     }
 
     &.calendar-date-select {
-      background: $primary;
+      background: variables.$primary;
       color: #fff;
     }
 

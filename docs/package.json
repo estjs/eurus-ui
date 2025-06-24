@@ -12,28 +12,28 @@
 		"serve": "vitepress serve ."
 	},
 	"dependencies": {
-		"vue": "^3.5.13"
+		"vue": "^3.5.17"
 	},
 	"devDependencies": {
-		"@iconify-json/carbon": "^1.2.5",
+		"@iconify-json/carbon": "^1.2.10",
 		"@types/klaw-sync": "^6.0.5",
 		"@types/markdown-it": "^13.0.9",
 		"@types/markdown-it-container": "^2.0.10",
-		"@types/node": "^20.17.11",
-		"@vitejs/plugin-vue": "^5.2.1",
-		"@vueuse/core": "^12.2.0",
+		"@types/node": "^20.19.1",
+		"@vitejs/plugin-vue": "^5.2.4",
+		"@vueuse/core": "^13.4.0",
 		"eurus-ui": "workspace:*",
-		"klaw-sync": "^6.0.0",
+		"klaw-sync": "^7.0.0",
 		"markdown-it": "^14.1.0",
 		"markdown-it-container": "^4.0.0",
-		"postcss": "^8.4.49",
-		"postcss-prefix-selector": "^2.1.0",
-		"typescript": "^5.7.2",
-		"unocss": "^0.65.3",
-		"vite": "^6.0.6",
-		"vite-plugin-inspect": "^0.10.6",
-		"vite-plugin-pwa": "^0.21.1",
+		"postcss": "^8.5.6",
+		"postcss-prefix-selector": "^2.1.1",
+		"typescript": "^5.8.3",
+		"unocss": "^66.2.3",
+		"vite": "^6.3.5",
+		"vite-plugin-inspect": "^11.2.0",
+		"vite-plugin-pwa": "^1.0.0",
 		"vite-plugin-restart": "^0.4.2",
-		"vitepress": "^1.5.0"
+		"vitepress": "^1.6.3"
 	}
 }

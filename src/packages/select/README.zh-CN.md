@@ -8,7 +8,7 @@ class: 'ESelect-doc'
 ```javascript
 import { ESelect } from 'eurus-ui';
 
-Vue.createApp().use(ESelect.name, ESelect)
+Vue.createApp().use(ESelect.name!, ESelect)
 ```
 
 ::::card select 基础用法

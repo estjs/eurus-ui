@@ -1,6 +1,6 @@
-@import '../../../scss/variables.scss';
+@use '../../../scss/variables.scss';
 
-$date-picker-footer-prefix-cls: $prefix + -date-picker-footer;
+$date-picker-footer-prefix-cls: variables.$prefix + -date-picker-footer;
 
 .#{$date-picker-footer-prefix-cls} {
   text-align: center;

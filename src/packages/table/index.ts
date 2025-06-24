@@ -15,13 +15,13 @@ const Table = Object.assign(ETable, {
 	Td: ETd,
 	Column: EColumn,
 	install: (app: App) => {
-		app.component(ETable.name, ETable);
-		app.component(EThead.name, EThead);
-		app.component(ETbody.name, ETbody);
-		app.component(ETr.name, ETr);
-		app.component(ETh.name, ETh);
-		app.component(ETd.name, ETd);
-		app.component(EColumn.name, EColumn);
+		app.component(ETable.name!, ETable);
+		app.component(EThead.name!, EThead);
+		app.component(ETbody.name!, ETbody);
+		app.component(ETr.name!, ETr);
+		app.component(ETh.name!, ETh);
+		app.component(ETd.name!, ETd);
+		app.component(EColumn.name!, EColumn);
 	},
 });
 

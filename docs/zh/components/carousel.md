@@ -8,7 +8,7 @@ class: 'carousel-doc'
 ```javascript
 import { ECarousel } from 'eurus-ui';
 
-Vue.createApp().use(ECarousel.name, ECarousel)
+Vue.createApp().use(ECarousel.name!, ECarousel)
 ```
 ::::card  carousel 类型
 

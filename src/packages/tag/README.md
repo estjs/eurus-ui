@@ -8,7 +8,7 @@ class: 'ETag-doc'
 ```javascript
 import { ETag } from 'eurus-ui';
 
-Vue.createApp().use(ETag.name, ETag)
+Vue.createApp().use(ETag.name!, ETag)
 ```
 <!--
 ::::card button 类型

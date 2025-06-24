@@ -1,4 +1,4 @@
-const taget = globalThis;
+const target = globalThis;
 const raf = target.requestAnimationFrame;
 const caf = target.cancelAnimationFrame;
 

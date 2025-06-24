@@ -1,6 +1,6 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$textarea-prefix-cls: $prefix + -textarea;
+$textarea-prefix-cls: variables.$prefix + -textarea;
 
 .#{$textarea-prefix-cls} {
 

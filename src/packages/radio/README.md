@@ -8,7 +8,7 @@ class: 'ERadio-doc'
 ```javascript
 import { ERadio } from 'eurus-ui';
 
-Vue.createApp().use(ERadio.name, ERadio)
+Vue.createApp().use(ERadio.name!, ERadio)
 ```
 <!--
 ::::card button 类型

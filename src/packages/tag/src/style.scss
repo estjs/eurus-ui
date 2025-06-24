@@ -1,6 +1,6 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$tag-prefix-cls: $prefix + -tag;
+$tag-prefix-cls: variables.$prefix + -tag;
 
 .#{$tag-prefix-cls} {
   display: inline-flex;
@@ -20,19 +20,19 @@ $tag-prefix-cls: $prefix + -tag;
   background-color: #ebf5ff;
 
   &.#{$tag-prefix-cls}-primary {
-    color: $white;
+    color: variables.$white;
     border: 1px solid var(--eu-color-primary);
     background-color: var(--eu-color-primary);
   }
 
   &.#{$tag-prefix-cls}-positive {
-    color: $white;
+    color: variables.$white;
     border: 1px solid var(--eu-color-positive);
     background-color: var(--eu-color-positive);
   }
 
   &.#{$tag-prefix-cls}-warning {
-    color: $white;
+    color: variables.$white;
     border: 1px solid var(--eu-color-warning);
     background-color: var(--eu-color-warning);
   }

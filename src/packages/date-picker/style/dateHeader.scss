@@ -1,6 +1,6 @@
-@import '../../../scss/variables.scss';
+@use '../../../scss/variables.scss';
 
-$date-picker-header-prefix-cls: $prefix + -date-picker-header;
+$date-picker-header-prefix-cls: variables.$prefix + -date-picker-header;
 
 
 .#{ $date-picker-header-prefix-cls } {

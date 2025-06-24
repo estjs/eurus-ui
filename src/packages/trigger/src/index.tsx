@@ -423,11 +423,9 @@ export default defineComponent({
 						scrollRight: mousePosition.value.left,
 						width: 0,
 						height: 0,
-				  }
+					}
 				: getElementScrollRect(firstElement.value, containerRect);
-			const getPopupRect = () =>
-				// @ts-expect-error
-				getElementScrollRect(popupRef.value, containerRect);
+			const getPopupRect = () => getElementScrollRect(popupRef.value, containerRect);
 			const popupRect = getPopupRect();
 			const { style, position } = getPopupStyle(
 				props.position,

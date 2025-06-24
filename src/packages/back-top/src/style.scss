@@ -1,7 +1,7 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
 
-$back-top-prefix-cls: $prefix + -back-top;
+$back-top-prefix-cls: variables.$prefix + -back-top;
 
 .#{$back-top-prefix-cls} {
   position: fixed;

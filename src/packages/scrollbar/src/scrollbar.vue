@@ -1,34 +1,35 @@
 <template>
-	<div :class="cls" :style="style">
-		<ResizeObserver @resize="handleResize">
-			<div
-				ref="containerRef"
-				:class="`${prefixCls}-container`"
-				v-bind="$attrs"
-				@scroll="handleScroll"
-			>
-				<ResizeObserver @resize="handleResize">
-					<slot />
-				</ResizeObserver>
-			</div>
-		</ResizeObserver>
-		<Thumb
-			v-if="!hide && hasHorizontalScrollbar"
-			ref="horizontalThumbRef"
-			:data="horizontalData"
-			direction="horizontal"
-			:both="isBoth"
-			@scroll="handleHorizontalScroll"
-		/>
-		<Thumb
-			v-if="!hide && hasVerticalScrollbar"
-			ref="verticalThumbRef"
-			:data="verticalData"
-			direction="vertical"
-			:both="isBoth"
-			@scroll="handleVerticalScroll"
-		/>
-	</div>
+  <div :class="cls"
+:style="style">
+    <ResizeObserver @resize="handleResize">
+      <div
+        ref="containerRef"
+        :class="`${prefixCls}-container`"
+        v-bind="$attrs"
+        @scroll="handleScroll"
+      >
+        <ResizeObserver @resize="handleResize">
+          <slot />
+        </ResizeObserver>
+      </div>
+    </ResizeObserver>
+    <Thumb
+      v-if="!hide && hasHorizontalScrollbar"
+      ref="horizontalThumbRef"
+      :data="horizontalData"
+      direction="horizontal"
+      :both="isBoth"
+      @scroll="handleHorizontalScroll"
+    />
+    <Thumb
+      v-if="!hide && hasVerticalScrollbar"
+      ref="verticalThumbRef"
+      :data="verticalData"
+      direction="vertical"
+      :both="isBoth"
+      @scroll="handleVerticalScroll"
+    />
+  </div>
 </template>
 
 <script lang="ts">

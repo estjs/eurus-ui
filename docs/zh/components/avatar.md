@@ -8,7 +8,7 @@ class: 'EAvatar-doc'
 ```javascript
 import { EAvatar } from 'eurus-ui';
 
-Vue.createApp().use(EAvatar.name, EAvatar)
+Vue.createApp().use(EAvatar.name!, EAvatar)
 ```
 ::::card avatar size
 

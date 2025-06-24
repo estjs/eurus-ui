@@ -8,7 +8,7 @@ class: 'EBreadcrumb-doc'
 ```javascript
 import { EBreadcrumb } from 'eurus-ui';
 
-Vue.createApp().use(EBreadcrumb.name, EBreadcrumb)
+Vue.createApp().use(EBreadcrumb.name!, EBreadcrumb)
 ```
 ::::card  EBreadcrumb 类型
 

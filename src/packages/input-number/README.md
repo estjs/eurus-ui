@@ -8,7 +8,7 @@ class: 'EInputNumber-doc'
 ```javascript
 import { EInputNumber } from 'eurus-ui';
 
-Vue.createApp().use(EInputNumber.name, EInputNumber)
+Vue.createApp().use(EInputNumber.name!, EInputNumber)
 ```
 <!--
 ::::card button 类型

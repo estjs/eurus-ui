@@ -1,6 +1,6 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$button-prefix-cls: $prefix + -button;
+$button-prefix-cls: variables.$prefix + -button;
 
 .#{$button-prefix-cls} {
 	position: relative;
@@ -35,18 +35,18 @@ $button-prefix-cls: $prefix + -button;
 	}
 
 	&:hover {
-		opacity: $button-opacity;
+		opacity: variables.$button-opacity;
 	}
 
 	&:active {
-		opacity: $button-opacity;
-		box-shadow: $button-box-shadow-active;
+		opacity: variables.$button-opacity;
+		box-shadow: variables.$button-box-shadow-active;
 	}
 
 	&::before {
 		border-radius: inherit;
 		bottom: 0;
-		box-shadow: $button-box-shadow;
+		box-shadow: variables.$button-box-shadow;
 		content: '';
 		display: block;
 		left: 0;
@@ -77,8 +77,8 @@ $button-prefix-cls: $prefix + -button;
 			box-shadow: none;
 		}
 		&:hover {
-			background-color: $button-default-bg;
-			opacity: $button-opacity;
+			background-color: variables.$button-default-bg;
+			opacity: variables.$button-opacity;
 		}
 
 	}
@@ -91,8 +91,8 @@ $button-prefix-cls: $prefix + -button;
 			box-shadow: none;
 		}
 		&:hover {
-			background-color: $button-default-bg;
-			opacity: $button-opacity;
+			background-color: variables.$button-default-bg;
+			opacity: variables.$button-opacity;
 		}
 	}
 
@@ -109,27 +109,27 @@ $button-prefix-cls: $prefix + -button;
 	}
 
 	&--xs {
-		font-size: $button-size-xs;
+		font-size: variables.$button-size-xs;
 		height: 24px;
 	}
 
 	&--sm {
-		font-size: $button-size-sm;
+		font-size: variables.$button-size-sm;
 		height: 28px;
 	}
 
 	&--md {
-		font-size: $button-size-md;
+		font-size: variables.$button-size-md;
 		height: 32px
 	}
 
 	&--lg {
-		font-size: $button-size-lg;
+		font-size: variables.$button-size-lg;
 		height: 34px;
 	}
 
 	&--xl {
-		font-size: $button-size-xl;
+		font-size: variables.$button-size-xl;
 		height: 38px;
 	}
 

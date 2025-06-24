@@ -6,7 +6,9 @@
 			:class="[`${prefixCls}-track`, `${prefixCls}-track-direction-${direction}`]"
 			@mousedown.self="handleTrackClick"
 		>
-			<div ref="thumbRef" :class="thumbCls" :style="thumbStyle" @mousedown="handleThumbMouseDown">
+			<div ref="thumbRef" :class="thumbCls"
+:style="thumbStyle" @mousedown="handleThumbMouseDown"
+>
 				<div :class="`${prefixCls}-thumb-bar`" />
 			</div>
 		</div>

@@ -1,7 +1,7 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
 
-$select-option-prefix-cls: $prefix + -select-option;
+$select-option-prefix-cls: variables.$prefix + -select-option;
 
 .#{$select-option-prefix-cls} {
 

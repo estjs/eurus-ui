@@ -1,5 +1,7 @@
 <template>
-	<ESelect v-model="vals" multiple :options="options" />
+	<ESelect v-model="vals" multiple
+:options="options"
+/>
 </template>
 
 <script setup lang="ts">

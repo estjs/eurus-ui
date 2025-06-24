@@ -8,7 +8,7 @@ class: 'trigger-doc'
 ```javascript
 import { ETrigger } from 'eurus-ui';
 
-Vue.createApp().use(ETrigger.name, ETrigger)
+Vue.createApp().use(ETrigger.name!, ETrigger)
 ```
 ::::card  trigger 类型
 

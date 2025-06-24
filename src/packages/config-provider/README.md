@@ -8,7 +8,7 @@ class: 'EConfigProvider-doc'
 ```javascript
 import { EConfigProvider } from 'eurus-ui';
 
-Vue.createApp().use(EConfigProvider.name, EConfigProvider)
+Vue.createApp().use(EConfigProvider.name!, EConfigProvider)
 ```
 <!--
 ::::card  EConfigProvider 类型

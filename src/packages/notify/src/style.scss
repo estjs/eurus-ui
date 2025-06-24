@@ -1,6 +1,6 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$notify-prefix-cls: $prefix + '-notify' !default;
+$notify-prefix-cls: variables.$prefix + '-notify' !default;
 $notify-list-prefix-cls: $notify-prefix-cls + '-list' !default;
 
 

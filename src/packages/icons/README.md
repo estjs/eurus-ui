@@ -8,7 +8,7 @@ class: 'EIcon-doc'
 ```javascript
 import { EIcon } from 'eurus-ui';
 
-Vue.createApp().use(EIcon.name, EIcon)
+Vue.createApp().use(EIcon.name!, EIcon)
 ```
 
 :::buttondemo0

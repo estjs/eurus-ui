@@ -4,6 +4,7 @@
 		"target": "ES6",
 		"rootDir": "../src",
 		"module": "ES6",
+		"types": [],
 		"outDir": "../dist/es"
 	},
 	"rootDir": "./src",

@@ -1,8 +1,8 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
 
-$dot-loading-prefix-cls: #{$prefix}-dot-loading !default;
-$spin-prefix-cls: #{$prefix}-spin !default;
+$dot-loading-prefix-cls: #{variables.$prefix}-dot-loading !default;
+$spin-prefix-cls: #{variables.$prefix}-spin !default;
 .#{$dot-loading-prefix-cls} {
 	position: relative;
 	display: inline-block;

@@ -8,7 +8,7 @@ class: 'EForm-doc'
 ```javascript
 import { EForm } from 'eurus-ui';
 
-Vue.createApp().use(EForm.name, EForm)
+Vue.createApp().use(EForm.name!, EForm)
 ```
 <!--
 ::::card  EForm 类型

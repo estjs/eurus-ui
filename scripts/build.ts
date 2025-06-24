@@ -26,7 +26,8 @@ console.log(`[eurus-ui env] ${nodeEnv}`);
 		console.log('[eurus-ui build]: start build css');
 		compileToCSS(nodeEnv);
 		console.log('[eurus-ui build]: start build type');
-		await execPromise('npm run build:types');
+		// await execPromise('npm run build:types');
+		await execPromise('npm run build:types-esm');
 	}
 	// console.log('[eurus-ui build]: start build css');
 

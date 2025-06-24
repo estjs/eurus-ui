@@ -8,7 +8,7 @@ class: 'ESelectDown-doc'
 ```javascript
 import { ESelectDown } from 'eurus-ui';
 
-Vue.createApp().use(ESelectDown.name, ESelectDown)
+Vue.createApp().use(ESelectDown.name!, ESelectDown)
 ```
 <!--
 ::::card button 类型

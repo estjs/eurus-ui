@@ -1,6 +1,6 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$form-item-prefix-cls: $prefix + -form-item;
+$form-item-prefix-cls: variables.$prefix + -form-item;
 .#{$form-item-prefix-cls} {
   width: 100%;
   display: flex;

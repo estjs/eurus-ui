@@ -27,8 +27,8 @@ export const useSorter = ({
 				const direction = isString(item.sortable.sortOrder)
 					? item.sortable.sortOrder
 					: _sorter.value?.field === item.dataIndex
-					? _sorter.value.direction
-					: '';
+						? _sorter.value.direction
+						: '';
 				if (direction) {
 					return {
 						field: item.dataIndex,

@@ -1,9 +1,18 @@
 <template>
-	<ESpace>
-		<EButton type="primary" @click="openMessage">Open message box</EButton>
-		<EButton type="primary" @click="openCloseMessage">Open close message box</EButton>
-		<EButton type="primary" @click="openCloseMessage">Open close message box</EButton>
-	</ESpace>
+  <ESpace>
+    <EButton type="primary"
+@click="openMessage">
+Open message box
+</EButton>
+    <EButton type="primary"
+@click="openCloseMessage">
+Open close message box
+</EButton>
+    <EButton type="primary"
+@click="openCloseMessage">
+Open close message box
+</EButton>
+  </ESpace>
 </template>
 
 <script setup lang="ts">

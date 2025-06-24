@@ -1,14 +1,14 @@
 ---
 class: 'EInput-doc'
 ---
-# EInput 输入框 
+# EInput 输入框
 
 ## 引入
 
 ```javascript
 import { EInput } from 'eurus-ui';
 
-Vue.createApp().use(EInput.name, EInput)
+Vue.createApp().use(EInput.name!, EInput)
 ```
 
 ::::card input基本用法

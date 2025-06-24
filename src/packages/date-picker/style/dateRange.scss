@@ -1,7 +1,7 @@
-@import '../../../scss/variables.scss';
+@use '../../../scss/variables.scss';
 
 
-$date-picker-range-prefix-cls: $prefix + -date-picker-range;
+$date-picker-range-prefix-cls: variables.$prefix + -date-picker-range;
 
 .#{$date-picker-range-prefix-cls} {
 

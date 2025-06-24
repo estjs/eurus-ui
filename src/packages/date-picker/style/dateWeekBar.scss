@@ -1,6 +1,6 @@
-@import '../../../scss/variables.scss';
+@use '../../../scss/variables.scss';
 
-$date-picker-week-bar-prefix-cls: $prefix + -date-picker-week-bar;
+$date-picker-week-bar-prefix-cls: variables.$prefix + -date-picker-week-bar;
 
 .#{ $date-picker-week-bar-prefix-cls } {
   th {

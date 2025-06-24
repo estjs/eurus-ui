@@ -8,7 +8,7 @@ class: 'ETextarea-doc'
 ```javascript
 import { ETextarea } from 'eurus-ui';
 
-Vue.createApp().use(ETextarea.name, ETextarea)
+Vue.createApp().use(ETextarea.name!, ETextarea)
 ```
 <!--
 ::::card  ETextarea 类型

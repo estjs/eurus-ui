@@ -1,6 +1,6 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$tooltip-prefix-cls: $prefix+ '-tooltip' !default;
+$tooltip-prefix-cls: variables.$prefix+ '-tooltip' !default;
 $tooltip-wrapper-prefix-cls: $tooltip-prefix-cls + '-wrapper' !default;
 
 

@@ -1,10 +1,12 @@
 import { ref, toRef, watch } from 'vue';
 import { isEqual } from '../_utils/is-equal';
 
+import type { Ref } from 'vue';
+
 export const usePureProp = <T extends Record<string, unknown>, K extends keyof T>(
 	props: T,
 	name: K,
-) => {
+): Ref<T[K]> => {
 	const _value = toRef(props, name);
 	const value = ref<T[K]>(_value.value);
 	watch(_value, (cur, pre) => {
@@ -12,5 +14,5 @@ export const usePureProp = <T extends Record<string, unknown>, K extends keyof T
 			value.value = cur;
 		}
 	});
-	return value;
+	return value as Ref<T[K]>;
 };

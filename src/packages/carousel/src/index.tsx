@@ -81,7 +81,7 @@ export default defineComponent({
 		// watch
 		watch(activeIndex, () => {
 			transformItem();
-			emit('change', activeIndex);
+			emit('change', activeIndex.value);
 		});
 
 		// mounted

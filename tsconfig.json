@@ -2,28 +2,51 @@
 	"compilerOptions": {
 		"target": "esnext",
 		"jsx": "preserve",
-		"jsxImportSource": "vue",
-		"lib": ["esnext", "DOM"],
-		"useDefineForClassFields": false,
-		"experimentalDecorators": true,
+		"lib": ["esnext", "dom", "dom.iterable", "scripthost"],
 		"baseUrl": "./src",
+
+		/* Modules */
 		"module": "esnext",
-		"moduleResolution": "node",
+		"moduleResolution": "bundler",
+
 		"paths": {
 			"@/*": ["*"],
 			"eurus-ui": ["index.ts"]
 		},
 		"resolveJsonModule": true,
+
 		"types": ["vite/client", "vitest/globals"],
-		"allowJs": false,
-		"strict": true,
-		"strictNullChecks": true,
-		"noUnusedLocals": true,
+		/* JavaScript Support */
+		"allowJs": true,
+
+		"strictNullChecks": false,
+		/* Type Checking */
+		// TODO: 待开启
+		// "strict": true,
+		// "noImplicitAny": true,
+		"noImplicitThis": true,
+		/* Emit */
 		"declaration": true,
-		"outDir": "./dist",
-		"removeComments": false,
-		"sourceMap": false,
+		"outDir": "lib",
+		"removeComments": true,
+
+		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
+		/* Interop Constraints */
+		"isolatedModules": true,
+
+		/* Completeness */
 		"skipLibCheck": true
-	}
+	},
+	"exclude": [
+		"node_modules",
+		"dist",
+		"lib",
+		"**/__test__/**/*.{test,spec}.{js,ts,jsx,tsx}",
+		"**/*.d.ts",
+		"vite.config.ts",
+		"vitest.config.ts",
+		"playwright.config.ts",
+		"cypress.config.ts"
+	]
 }

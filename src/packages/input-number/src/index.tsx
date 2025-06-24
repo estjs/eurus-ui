@@ -167,7 +167,7 @@ export default defineComponent({
 							{slots['plus-icon'] ? slots['plus-icon']() : <EIcon name="plus" size="22" />}
 						</span>
 					),
-			  }
+				}
 			: {};
 		return () => (
 			<div class={computedCls.value}>

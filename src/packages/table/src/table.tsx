@@ -234,7 +234,7 @@ export default defineComponent({
 					column: TableColumnData | TableOperationColumn;
 					rowIndex: number;
 					columnIndex: number;
-				}) => { rowspan?: number; colspan?: number } | void
+				}) => { rowspan?: number; colspan?: number }
 			>,
 		},
 		/**
@@ -337,7 +337,7 @@ export default defineComponent({
 					column: TableColumnData | TableOperationColumn;
 					rowIndex: number;
 					columnIndex: number;
-				}) => { rowspan?: number; colspan?: number } | void
+				}) => { rowspan?: number; colspan?: number }
 			>,
 		},
 		/**
@@ -614,7 +614,7 @@ export default defineComponent({
 		const prefixCls = getPrefixCls('table');
 		const bordered = computed(() => {
 			if (isObject(props.bordered)) {
-				return { ...DEFAULT_BORDERED, ...props.bordered };
+				return { ...DEFAULT_BORDERED, ...((props.bordered || {}) as object) };
 			}
 			return { ...DEFAULT_BORDERED, wrapper: props.bordered };
 		});
@@ -758,7 +758,7 @@ export default defineComponent({
 				? {
 						field: dataIndex,
 						direction,
-				  }
+					}
 				: undefined;
 
 			emit('sorterChange', dataIndex, direction);
@@ -1536,7 +1536,7 @@ export default defineComponent({
 				indexPath,
 				allowDrag = true,
 			}: { indentSize?: number; indexPath?: number[]; allowDrag?: boolean } = {},
-		): JSX.Element => {
+		) => {
 			const currentKey = record.key;
 			const currentPath = (indexPath ?? []).concat(rowIndex);
 			const expandContent = renderExpandContent(record);
@@ -1559,7 +1559,7 @@ export default defineComponent({
 							}
 							handleDragEnd(ev);
 						},
-				  }
+					}
 				: {};
 
 			const dragTargetEvent = dragType.value
@@ -1583,7 +1583,7 @@ export default defineComponent({
 							handleChange('drag');
 							handleDrop(ev);
 						},
-				  }
+					}
 				: {};
 
 			return (
@@ -1609,7 +1609,9 @@ export default defineComponent({
 					>
 						{operations.value.map((operation, index) => {
 							const cellId = `${rowIndex}-${index}`;
-							const [rowspan, colspan] = props.spanAll ? tableSpan.value[cellId] ?? [1, 1] : [1, 1];
+							const [rowspan, colspan] = props.spanAll
+								? (tableSpan.value[cellId] ?? [1, 1])
+								: [1, 1];
 
 							if (props.spanAll && removedCells.value.includes(cellId)) {
 								return null;
@@ -1651,7 +1653,7 @@ export default defineComponent({
 									? {
 											showExpandBtn: record.hasSubtree,
 											indentSize: record.hasSubtree ? indentSize - 20 : indentSize,
-									  }
+										}
 									: {};
 
 							const style = getVirtualColumnStyle(column.dataIndex);
@@ -1700,7 +1702,7 @@ export default defineComponent({
 					{flattenData.value.length > 0
 						? flattenData.value.map((record, index) =>
 								renderRecord(record, index, { indentSize: hasSubData ? 20 : 0 }),
-						  )
+							)
 						: renderEmpty()}
 				</Tbody>
 			);
@@ -1714,7 +1716,6 @@ export default defineComponent({
 							operations.value.map((operation, index) => (
 								<OperationTh
 									key={`operation-th-${index}`}
-									// @ts-expect-error
 									ref={(ins: ComponentPublicInstance) => {
 										if (ins?.$el && operation.name) {
 											thRefs.value[operation.name] = ins.$el;
@@ -1735,7 +1736,6 @@ export default defineComponent({
 							return (
 								<Th
 									key={`th-${index}`}
-									// @ts-expect-error
 									ref={(ins: ComponentPublicInstance) => {
 										if (ins?.$el && column.dataIndex) {
 											thRefs.value[column.dataIndex] = ins.$el;
@@ -1782,7 +1782,7 @@ export default defineComponent({
 											hide: flattenData.value.length > 0,
 											disableVertical: true,
 											...scrollbarProps.value,
-									  }
+										}
 									: undefined)}
 							>
 								<table
@@ -1838,7 +1838,7 @@ export default defineComponent({
 										? {
 												outerStyle: { display: 'flex', minHeight: '0' },
 												...scrollbarProps.value,
-										  }
+											}
 										: undefined)}
 									onScroll={onTbodyScroll}
 								>

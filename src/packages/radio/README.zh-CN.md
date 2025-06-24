@@ -9,7 +9,7 @@ class: 'ERadio-doc'
 ```javascript
 import {ERadio} from 'eurus-ui';
 
-Vue.createApp().use(ERadio.name, ERadio)
+Vue.createApp().use(ERadio.name!, ERadio)
 ```
 
 ::::card 单选框基本用法

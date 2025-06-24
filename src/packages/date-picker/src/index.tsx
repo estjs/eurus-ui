@@ -76,8 +76,8 @@ export default defineComponent({
 			return isArray(props.modelValue)
 				? props.modelValue
 				: props.modelValue
-				? [props.modelValue]
-				: [];
+					? [props.modelValue]
+					: [];
 		});
 		const computedDisabled = computed(() => {
 			return props.disabled || formItemFields?.disabled;

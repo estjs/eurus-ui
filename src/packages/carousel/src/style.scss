@@ -1,6 +1,6 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
-$carousel-prefix-cls: $prefix + -carousel;
+$carousel-prefix-cls: variables.$prefix + -carousel;
 
 .#{$carousel-prefix-cls} {
   position: relative;

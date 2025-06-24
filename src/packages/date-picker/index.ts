@@ -2,7 +2,7 @@ import EDatePicker from './src';
 import type { App } from 'vue';
 
 EDatePicker.install = (app: App) => {
-	app.component(EDatePicker.name, EDatePicker);
+	app.component(EDatePicker.name!, EDatePicker);
 };
 
 export { EDatePicker };

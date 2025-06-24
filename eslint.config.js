@@ -1,3 +1,3 @@
 import { estjs } from '@estjs/eslint-config';
 
-export default estjs({},{unocss:false});
+export default estjs({}, { unocss: false });

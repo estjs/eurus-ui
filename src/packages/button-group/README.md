@@ -8,9 +8,9 @@ class: 'EButtonGroup-doc'
 ```javascript
 import { EButtonGroup } from 'eurus-ui';
 
-Vue.createApp().use(EButtonGroup.name, EButtonGroup)
+Vue.createApp().use(EButtonGroup.name!, EButtonGroup)
 ```
-::::card buttonGroup 
+::::card buttonGroup
 
 :::code button-groupDemo0
 <<< ../src/packages/button-group/demo/Demo0.vue

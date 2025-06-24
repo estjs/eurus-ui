@@ -1,6 +1,9 @@
 <template>
-	<ESwitch v-model="switchValue" @change="onChange" />
-	<ESwitch v-model="switchValue" disabled @change="onChange" />
+	<ESwitch v-model="switchValue" @change="onChange"
+/>
+	<ESwitch v-model="switchValue" disabled
+@change="onChange"
+/>
 </template>
 
 <script setup lang="ts">

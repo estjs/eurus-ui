@@ -1,7 +1,7 @@
 {
 	"name": "eurus-ui",
 	"version": "0.0.36-beta.6",
-	"packageManager": "pnpm@9.15.2",
+	"packageManager": "pnpm@10.12.2",
 	"description": "A Vue 3 Component Library.Uses TypeScript, Fast, Small, Easy to use.",
 	"type": "module",
 	"keywords": [
@@ -69,29 +69,29 @@
 		"resize-observer-polyfill": "^1.5.1"
 	},
 	"devDependencies": {
-		"@estjs/eslint-config": "^1.2.12",
-		"@estjs/tools": "^0.1.35",
-		"@types/node": "^20.17.11",
-		"@vitejs/plugin-vue": "^5.2.1",
-		"@vitejs/plugin-vue-jsx": "^4.1.1",
+		"@estjs/eslint-config": "^2.0.5",
+		"@estjs/tools": "^0.2.0",
+		"@types/node": "^20.19.1",
+		"@vitejs/plugin-vue": "^5.2.4",
+		"@vitejs/plugin-vue-jsx": "^4.2.0",
 		"@vitest/coverage-c8": "^0.33.0",
 		"@vue/test-utils": "^2.4.6",
-		"bumpp": "^9.9.2",
-		"eslint": "^9.17.0",
+		"bumpp": "^10.2.0",
+		"eslint": "^9.29.0",
 		"eslint-plugin-jsx-a11y": "^6.10.2",
-		"happy-dom": "^16.3.0",
-		"lint-staged": "^15.3.0",
+		"happy-dom": "^18.0.1",
+		"lint-staged": "^16.1.2",
 		"pnpm": "8.9.2",
 		"rimraf": "^5.0.10",
-		"sass": "^1.83.0",
-		"simple-git-hooks": "^2.11.1",
-		"standard-changelog": "^6.0.0",
-		"tsx": "^4.19.2",
-		"typescript": "^5.7.2",
-		"vite": "^6.0.6",
-		"vitest": "^2.1.8",
-		"vue": "^3.5.13",
-		"vue-tsc": "^2.2.0"
+		"sass": "^1.89.2",
+		"simple-git-hooks": "^2.13.0",
+		"standard-changelog": "^7.0.1",
+		"tsx": "^4.20.3",
+		"typescript": "^5.8.3",
+		"vite": "^6.3.5",
+		"vitest": "^3.2.4",
+		"vue": "^3.5.17",
+		"vue-tsc": "^2.2.10"
 	},
 	"engines": {
 		"node": ">= 16"
@@ -101,7 +101,15 @@
 			"ignoreMissing": [
 				"@algolia/client-search"
 			]
-		}
+		},
+		"ignoredBuiltDependencies": [
+			"@parcel/watcher",
+			"esbuild"
+		],
+		"onlyBuiltDependencies": [
+			"simple-git-hooks",
+			"unrs-resolver"
+		]
 	},
 	"simple-git-hooks": {
 		"pre-commit": "pnpm exec lint-staged --concurrent false",

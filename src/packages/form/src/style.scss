@@ -1,8 +1,8 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
 
-$form-prefix-cls: $prefix + -form;
-$form-item-prefix-cls: $prefix + -form-item;
+$form-prefix-cls: variables.$prefix + -form;
+$form-item-prefix-cls: variables.$prefix + -form-item;
 
 .#{$form-prefix-cls}{
   display: flex;

@@ -1,8 +1,12 @@
 <template>
-	<e-tag v-for="(item, index) in list" :key="item" :closable="true" @close="closeClick(index)">
+	<e-tag v-for="(item, index) in list" :key="item"
+:closable="true" @close="closeClick(index)"
+>
 		{{ item }}
 	</e-tag>
-	<e-input v-model="newTag" size="small" @keyup.enter="handleInputConfirm" />
+	<e-input v-model="newTag" size="small"
+@keyup.enter="handleInputConfirm"
+/>
 </template>
 
 <script lang="ts" setup>

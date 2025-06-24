@@ -8,7 +8,7 @@ class: 'pagination-doc'
 ```javascript
 import { EPagination } from 'eurus-ui';
 
-Vue.createApp().use(EPagination.name, EPagination)
+Vue.createApp().use(EPagination.name!, EPagination)
 ```
 ::::card  pagination 类型
 

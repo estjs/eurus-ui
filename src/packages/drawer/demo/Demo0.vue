@@ -1,6 +1,8 @@
 <template>
-	<EButton @click="open">Open Drawer</EButton>
-	<EDrawer :visible="visible" title="喝前摇一摇" :footer="true" @close="open">
+	<EButton @click="open"> Open Drawer </EButton>
+	<EDrawer :visible="visible" title="喝前摇一摇"
+:footer="true" @close="open"
+>
 		喝前摇一摇 汪汪汪汪汪汪 汪汪汪汪汪汪 汪汪汪汪汪汪 汪汪汪汪汪汪 汪汪汪汪汪汪 汪汪汪汪汪汪
 		汪汪汪汪汪汪 汪汪汪汪汪汪 汪汪汪汪汪汪 汪汪汪汪汪汪 汪汪汪汪汪汪 汪汪汪汪汪汪 汪汪汪汪汪汪
 		汪汪汪汪汪汪 汪汪汪汪汪汪 汪汪汪汪汪汪 汪汪汪汪汪汪 汪汪汪汪汪汪 汪汪汪汪汪汪 汪汪汪汪汪汪 s

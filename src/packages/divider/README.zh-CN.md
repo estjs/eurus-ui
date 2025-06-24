@@ -8,7 +8,7 @@ class: 'EDivider-doc'
 ```javascript
 import { EDivider } from 'eurus-ui';
 
-Vue.createApp().use(EDivider.name, EDivider)
+Vue.createApp().use(EDivider.name!, EDivider)
 ```
 ::::card  EDivider 类型
 

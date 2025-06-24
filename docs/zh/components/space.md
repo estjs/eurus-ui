@@ -8,7 +8,7 @@ class: 'space-doc'
 ```javascript
 import { ESpace } from 'eurus-ui';
 
-Vue.createApp().use(ESpace.name, ESpace)
+Vue.createApp().use(ESpace.name!, ESpace)
 ```
 ::::card  space 类型
 
@@ -22,7 +22,7 @@ Vue.createApp().use(ESpace.name, ESpace)
 ### space Props
 
 | 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- | 
+| --- | --- | --- | --- |
 | size | string | `sm` | 间距大小 |
 | direction | string | `horizontal` | 间距方向 |
 | align | string | - | 间距对齐方式 |

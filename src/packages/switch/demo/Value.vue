@@ -1,5 +1,7 @@
 <template>
-	<ESwitch v-model="value" checked-value="check" unchecked-value="uncheck" />
+	<ESwitch v-model="value" checked-value="check"
+unchecked-value="uncheck"
+/>
 	<ESwitch
 		v-model="value"
 		checked-value="check"

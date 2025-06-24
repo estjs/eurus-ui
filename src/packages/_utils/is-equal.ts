@@ -50,7 +50,6 @@ export const isEqual = (a: unknown, b: unknown) => {
 		if (a === b) {
 			return true;
 		}
-		// @ts-expect-error
 		return a.toString() === b.toString();
 	}
 	return a === b;

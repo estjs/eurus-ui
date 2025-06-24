@@ -1,7 +1,7 @@
-@import '../../../scss/variables';
+@use '../../../scss/variables';
 
 
-$select-down-prefix-cls: $prefix + -select-down;
+$select-down-prefix-cls: variables.$prefix + -select-down;
 
 .#{$select-down-prefix-cls} {
   position: relative;
@@ -171,7 +171,7 @@ $select-down-prefix-cls: $prefix + -select-down;
   &-panel {
     position: absolute;
     left: 0;
-    background: $white;
+    background: variables.$white;
     box-sizing: border-box;
     min-width: 100%;
     z-index: 50;
@@ -181,8 +181,8 @@ $select-down-prefix-cls: $prefix + -select-down;
 
     &-wrapper {
       position: relative;
-      border: 1px solid $border-color-base;
-      box-shadow: $select-down-panel-shadow;
+      border: 1px solid variables.$border-color-base;
+      box-shadow: variables.$select-down-panel-shadow;
 
       .panel {
         list-style: none;
